@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wr_b}
-  s.version = "0.0.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jugyo"]
@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
     "lib/public/index.html",
     "lib/wr_b.rb",
     "spec/spec_helper.rb",
-    "spec/wr_b_spec.rb"
+    "spec/wr_b_spec.rb",
+    "wr_b.gemspec"
   ]
   s.homepage = %q{http://github.com/jugyo/wr_b}
   s.licenses = ["MIT"]
