@@ -15,13 +15,16 @@ Jeweler::Tasks.new do |gem|
   gem.name = "wr_b"
   gem.homepage = "http://github.com/jugyo/wr_b"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ir_b over the WebSocket. Usage: 'wr b'}
+  gem.description = %Q{wr_b is the ir_b over the WebSocket. You can start an irb session on the browser that supports WebSocket.}
   gem.email = "jugyo.org@gmail.com"
   gem.authors = ["jugyo"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
+  gem.add_runtime_dependency 'ws-io', '~> 1.0'
+  gem.add_runtime_dependency 'ir_b', '~> 1.2'
+  gem.add_runtime_dependency 'launchy', '~> 0.3'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
 end
 Jeweler::RubygemsDotOrgTasks.new
